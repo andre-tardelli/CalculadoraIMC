@@ -1,19 +1,28 @@
 # Calculadora IMC
-Desc
+Esse foi um projeto desenvolvido visando ter o primeiro contato com a criação de um aplicativo android nativo, utilizando a linguagem Kotlin. A sua principal funcionalidade é receber as informações do usuário, realizar o cálculo e informar o resultato na tela seguinte, diferenciando por cores o resultado.
 
 ## :camera_flash: Screenshots
 <!-- You can add more screenshots here if you like -->
 Screenshots
 
 ## Tecnologias
-Techs
-
+- Activity
+- Intent
+- Snackbar
+- ViewGroups
+  - LinearLayout
+  - ConstraintLayout
+- Views
+  - ImageView
+  - TextView
+  - EditText
+  - Button
 
 ## License
 ```
 The MIT License (MIT)
 
-Copyright (c) 2023 Roque Buarque Junior
+Copyright (c) 2024 André Luiz Tardelli
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of
 this software and associated documentation files (the "Software"), to deal in
