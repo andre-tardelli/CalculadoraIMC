@@ -37,7 +37,6 @@ class Result_Activity : AppCompatActivity() {
             tvClassificacao.setTextColor(Color.RED)
             "OBESIDADE GRAVE"
         }
-
         tvClassificacao.text = classificacao
     }
 }

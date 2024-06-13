@@ -9,40 +9,40 @@
 
     <LinearLayout
         android:id="@+id/vg_header"
-        android:orientation="vertical"
-        android:background="@drawable/gradient_bg"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toTopOf="parent" >
+        android:background="@drawable/gradient_bg"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
-            android:src="@drawable/ic_weight"
-            android:layout_marginStart="16dp"
-            android:layout_marginBottom="16dp"
-            android:layout_marginTop="24dp"
             android:layout_width="48dp"
             android:layout_height="48dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="16dp"
+            android:src="@drawable/ic_weight"
             app:tint="@color/white" />
-        
-        <TextView
-            android:text="Calculadora de IMC"
-            android:layout_marginStart="24dp"
-            android:textColor="@color/white"
-            android:textStyle="bold"
-            android:textSize="24sp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
 
         <TextView
-            android:text="Preencha todos     os campos para calcular o seu IMC"
-            android:layout_marginStart="24dp"
-            android:layout_marginEnd="24dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginBottom="48dp"
-            android:textColor="@color/white"
-            android:textStyle="bold"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:text="Calculadora de IMC"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="48dp"
+            android:text="Preencha todos os campos para calcular o seu IMC"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
 
     </LinearLayout>
 
@@ -55,50 +55,47 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
-    <!--android:background="@color/primary_400" -->
 
-
-<com.google.android.material.textfield.TextInputLayout
-    android:id="@+id/textInputLayout"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_marginStart="16dp"
-    android:layout_marginEnd="16dp"
-    android:layout_marginTop="24dp"
-    app:hintEnabled="false"
-    app:layout_constraintTop_toBottomOf="@+id/vg_header"
-    tools:layout_editor_absoluteX="1dp">
-
-    <com.google.android.material.textfield.TextInputEditText
-        android:id="@+id/edt_peso"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@drawable/rounded_bg"
-        android:drawableEnd="@drawable/ic_weight"
-        android:hint="Digite seu peso Ex: 70.20"
-        android:inputType="numberDecimal"
-        android:maxLength="6" />
-
-</com.google.android.material.textfield.TextInputLayout>
-
-<com.google.android.material.textfield.TextInputLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_margin="16dp"
-    app:hintEnabled="false"
-    app:layout_constraintTop_toBottomOf="@+id/textInputLayout"
-    tools:layout_editor_absoluteX="1dp">
-
-    <com.google.android.material.textfield.TextInputEditText
-        android:id="@+id/edt_altura"
-        android:drawableEnd="@drawable/ic_height"
-        android:maxLength="4"
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/rounded_bg"
-        android:hint="Digite aqui sua altura Ex: 1.70"
-        android:inputType="numberDecimal" />
-</com.google.android.material.textfield.TextInputLayout>
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        app:hintEnabled="false"
+        app:layout_constraintTop_toBottomOf="@+id/vg_header"
+        tools:layout_editor_absoluteX="1dp">
 
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edt_peso"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/rounded_bg"
+            android:drawableEnd="@drawable/ic_weight"
+            android:hint="Digite seu peso Ex: 70.20"
+            android:inputType="numberDecimal"
+            android:maxLength="6" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        app:hintEnabled="false"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout"
+        tools:layout_editor_absoluteX="1dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edt_altura"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_bg"
+            android:drawableEnd="@drawable/ic_height"
+            android:hint="Digite aqui sua altura Ex: 1.70"
+            android:inputType="numberDecimal"
+            android:maxLength="4" />
+    </com.google.android.material.textfield.TextInputLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
